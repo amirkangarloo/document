@@ -1,0 +1,14 @@
+{
+  "name": "worker-threads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "Amir Kangarloo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
