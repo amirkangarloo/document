@@ -1,6 +1,7 @@
 # ✅ Is Node.js Single-threaded or Multi-threaded?
 
 Node.js often causes confusion around the concept of single-threaded vs. multi-threaded. Let’s clarify the full picture.
+
 **Short answer: Both — depending on what you're talking about.**
 
 
@@ -36,6 +37,8 @@ UV_THREADPOOL_SIZE=8 node app.js
 - This allows you to run **JavaScript in multiple threads**, with real parallelism.
 
 ✅ TRUE: “Node.js supports worker threads” — but you have to explicitly use them.
+
+**</> [code](https://github.com/amirkangarloo/document/tree/main/Nodejs/single-or-multi-thread/worker-threads "watch code")**
 
 ## 📌 4. Clustering & PM2 – Multi-process scaling
 
