@@ -1,0 +1,22 @@
+{
+  "name": "clustering-and-pm2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "primary": "node primary.js",
+    "pm2": "pm2 start server.js --name clustering-and-pm2 --instances 4",
+    "pm2-delete": "pm2 delete clustering-and-pm2",
+    "test": "loadtest -n 1200 -c 400 -k http://localhost:3000/heavy"
+  },
+  "keywords": [],
+  "author": "Amir Kangarloo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "loadtest": "^8.2.0",
+    "pm2": "^6.0.5"
+  }
+}
