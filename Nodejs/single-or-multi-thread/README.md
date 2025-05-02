@@ -38,7 +38,7 @@ UV_THREADPOOL_SIZE=8 node app.js
 
 ✅ TRUE: “Node.js supports worker threads” — but you have to explicitly use them.
 
-**</> [code](https://github.com/amirkangarloo/document/tree/main/Nodejs/single-or-multi-thread/worker-threads "watch code")**
+**</> [code](https://github.com/amirkangarloo/document/tree/main/Nodejs/single-or-multi-thread/worker-threads "code")**
 
 ## 📌 4. Clustering & PM2 – Multi-process scaling
 
@@ -46,6 +46,8 @@ UV_THREADPOOL_SIZE=8 node app.js
 - This doesn't create threads, but **spawns multiple processes** (usually equal to the number of CPU cores), each with its own event loop.
 
 ✅ TRUE: “Node.js can use clustering or PM2” — this is about **horizontal scaling with processes**, not threads.
+
+**</> [code](https://github.com/amirkangarloo/document/tree/main/Nodejs/single-or-multi-thread/clustering-and-pm2 "code")**
 
 ## 🟢 Conclusion
 
