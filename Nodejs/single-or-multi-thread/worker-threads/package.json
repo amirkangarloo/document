@@ -2,9 +2,13 @@
   "name": "worker-threads",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "01": "node single-thread/server.js",
+    "02": "node multi-threads/server.js",
+    "03": "node multi-threads-with-parallel-process/server.js"
+  },
   "keywords": [],
   "author": "Amir Kangarloo",
   "license": "MIT",
