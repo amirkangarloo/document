@@ -52,6 +52,20 @@
 |      libuv        |  <--- Event loop + thread pool + async I/O
 +------------------+
 ```
+### Node has 2 sides:
+
+1. **JS code** -> In lib directory in Nodejs project
+
+2. **C++ code** -> In src directory in Nodejs project
+
+> This image tell us how relay Nodejs work under the hood
+
+- Your JS code use basic js function has in lib directtory
+- In lib directory use processs.binding (now use internalBinding) function and convert you js code to c++ code by useing V8 functions
+- Now use C++ functions implemented in src directory
+- Finally Nodejs use libuv to access OS for run concurrent tasks
+
+![](https://github.com/amirkangarloo/document/blob/main/Nodejs/v8-vs-libuv/img/02.png)
 
 ---
 
