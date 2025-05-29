@@ -1,0 +1,2 @@
+- http module -> not into thread pool
+- fs module like crypto function (pbkdf2) -> working with tread and thread pool
